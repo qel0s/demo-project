@@ -80,13 +80,68 @@
                         <div class="card myborder">
 
                             <div class="card-header myborder " style="background-color: #15203d; ">
-                                <h6>Physical activity for period</h6>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h6>Physical activity for period</h6>
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-3">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn" style="background-color: #15203d; color: white;">Year</button>
+                                            <button type="button" class="btn" style="background-color: #15203d; color: white;">Month</button>
+                                            <button type="button" class="btn" style="background-color: #15203d; color: white;">Week</button>
+                                            <button type="button" class="btn" style="background-color: #07112c; color: white;">Day</button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
+
+
 
                             <div class="card-body" style="background-color: #101c38; padding: 0px;">
                                 <div class="row">
                                     <div class="col-3">
-
+                                        <div class="row" style="height: 58px;">
+                                            <div class="col-2"></div>
+                                            <div class="col-2">
+                                                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-calendar-day-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-4.785-6.145a.425.425 0 0 1-.43-.425c0-.242.192-.43.43-.43a.428.428 0 1 1 0 .855zm.336.563v4.105h-.672V8.418h.672zm-6.867 4.105v-2.3h2.261v-.61H4.684V7.801h2.464v-.61H4v5.332h.684zm3.296 0h.676V9.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a1.806 1.806 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98v4.105z"/>
+                                                  </svg>
+                                            </div>
+                                            <div class="col-8">
+                                                06/09/2020
+                                            </div>
+                                        </div>
+                                        <div class="row" style="height: 43px;">
+                                            <div class="col-3">
+                                                <h6>Training</h6>
+                                            </div>
+                                            <div class="col-6"> </div>
+                                            <div class="col-3">3 hrs</div>
+                                        </div>
+                                        <div class="row" style="height: 43px;">
+                                            <div class="col-3">
+                                                <h6>Sleep</h6>
+                                            </div>
+                                            <div class="col-6"> </div>
+                                            <div class="col-3">10 hrs</div>
+                                        </div>
+                                        <div class="row" style="height: 43px;">
+                                            <div class="col-4">
+                                                <h6>Drink Water</h6>
+                                            </div>
+                                            <div class="col-5"> </div>
+                                            <div class="col-3">4 lt</div>
+                                        </div>
+                                        <div class="row" style="height: 43px;">
+                                            <div class="col-4">
+                                                <h6>Lose Weight</h6>
+                                            </div>
+                                            <div class="col-5"> </div>
+                                            <div class="col-3">200 gr</div>
+                                        </div>
                                     </div>
                                     <div class="col-9">
                                         <canvas id="physicalActivity" width="1040" height="230" style="background-color: #0e1a36;"></canvas>
@@ -154,7 +209,21 @@
                         <div class="card myborder ">
 
                             <div class="card-header myborder " style="background-color: #15203d; ">
-                                <h6>Sleep For Period</h6>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h6>Sleep For Period</h6>
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-3">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn" style="background-color: #15203d; color: white;">Year</button>
+                                            <button type="button" class="btn" style="background-color: #07112c; color: white;">Month</button>
+                                            <button type="button" class="btn" style="background-color: #15203d; color: white;">Week</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
 
                             <div class="card-body " style="background-color: #101c38; padding: 0px;">
@@ -172,7 +241,16 @@
                             </div>
 
                             <div class="card-body " style="background-color: #101c38; padding: 0px;">
-                                <canvas id="lastTraining" width="448" height="230" style="background-color: #0e1a36;"></canvas>
+                                <div class="col-12">
+                                    <div class="row" style="height: 118px; width: 448px;">
+                                        <canvas id="lastTraining1" width="448" height="118" style="background-color: #0e1a36;"></canvas>
+                                    </div>
+                                    <div class="row" style="height: 118px; width: 448px;">
+                                        <canvas id="lastTraining2" width="448" height="118" style="background-color: #0e1a36;"></canvas>
+                                    </div>
+                                </div>
+
+
                             </div>
 
                         </div>
@@ -194,7 +272,7 @@
                         <button type="button " class="btn " style="color: white; ">
                             <svg width="1.5em " height="1.5em " viewBox="0 0 16 16 " class="bi bi-bell-fill " fill="currentColor " xmlns="http://www.w3.org/2000/svg ">
                                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z "/>
-                              </svg>
+                            </svg>
                         </button>
                     </div>
 
@@ -206,7 +284,7 @@
                             <path fill-rule="evenodd " d="M1 15.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM11.5 2H11V1h.5A1.5 1.5 0 0 1 13 2.5V15h-1V2.5a.5.5 0 0 0-.5-.5z "/>
                             <path fill-rule="evenodd " d="M10.828.122A.5.5 0 0 1 11 .5V15h-1V1.077l-6 .857V15H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117z "/>
                             <path d="M8 9c0 .552.224 1 .5 1s.5-.448.5-1-.224-1-.5-1-.5.448-.5 1z "/>
-                          </svg></button>
+                        </svg></button>
                     </div>
                 </div>
 
@@ -216,7 +294,7 @@
                     <div class="col-1 "></div>
                     <div class="col-10 ">
                         <img src="https://www.andersonsobelcosmetic.com/wp-content/uploads/2018/09/chin-implant-vs-fillers-best-for-improving-profile-bellevue-washington-chin-surgery.jpg " alt="profile picture " class="pp ">
-                        <h5>Random Name</h5>
+                        <h5>Lorem ipsum</h5>
                     </div>
                     <div class="col-1 "></div>
                 </div>
@@ -249,16 +327,66 @@
 
 
                 <div class="row " style="height: 487px; ">
-                    <div class="card myborder ">
+                    <div class="col-12">
+                        <div class="card myborder ">
 
-                        <div class="card-header myborder " style="background-color: #15203d; ">
-                            <h6>Your monthly goals</h6>
+                            <div class="card-header myborder " style="background-color: #15203d; ">
+
+                            </div>
+
+                            <div class="card-body " style="background-color: #101c38; padding: 0px;">
+                                <div class="container">
+                                    <div class="row" style="height: 25;">
+                                        <div class="col-7">Sleep</div>
+                                        <div class="col-5">150/240 hrs</div>
+                                    </div>
+                                    <div class="row" style="height: 51;">
+                                        <div class="w3-light-grey">
+                                            <div class="w3-grey" style="height:24px;width:50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="height: 25;">
+                                        <div class="col-7">Drink Water</div>
+                                        <div class="col-5">120/160 ltr</div>
+                                    </div>
+                                    <div class="row" style="height: 51;">
+                                        <div class="w3-light-grey">
+                                            <div class="w3-grey" style="height:24px;width:50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="height: 25;">
+                                        <div class="col-7">Run</div>
+                                        <div class="col-5">28/80 km</div>
+                                    </div>
+                                    <div class="row" style="height: 51;">
+                                        <div class="w3-light-grey">
+                                            <div class="w3-grey" style="height:24px;width:50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="height: 25;">
+                                        <div class="col-7">Lose Weight</div>
+                                        <div class="col-5">4.5/5 kg</div>
+                                    </div>
+                                    <div class="row" style="height: 51;">
+                                        <div class="w3-light-grey">
+                                            <div class="w3-grey" style="height:24px;width:50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="height: 150;">
+                                        <div class="col-10">
+                                            <h6>Task<br />Running</h6><br />
+                                            <p style="color: gray;">06.09.2020 | 8:30 am</p>
+                                        </div>
+                                        <div class="col-2">
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
-
-                        <div class="card-body " style="background-color: #101c38; padding: 0px;">
-                            This is some text within a card bodyyyyyyyyyyyyy.
-                        </div>
-
                     </div>
                 </div>
 
