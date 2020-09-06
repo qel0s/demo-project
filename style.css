@@ -1,0 +1,14 @@
+.active {
+    background-color: #07112c;
+}
+
+.myborder {
+    border: solid 1px #504a65;
+}
+
+.pp {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
